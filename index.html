@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.extensions.min.js"></script>
+    <title>Talent.io</title>
+  </head>
+  <body onload="hide_preloader()">
     <div class="cursor"></div>
     <div class="cursorFollowing"></div>
-  </div>
-</body>
-<script src='./js/jquery-3.5.1.min.js'></script>
-<script src='./js/gsap.min.js'></script>
-<script src='./js/index.js'></script>
+    <section class="hero">
+      <nav class="nav">
+        <div class="burgur">
+          <div class="line"></div>
+        </div>
+        <a href="./index.html" class="logo hover no-select">Talent.io</a>
+        <div class="flex-grow"></div>
+        <ul class="nav-list">
+          <li class="nav-item hover nav-hover">Projects</li>
+          <li class="nav-item hover nav-hover">About</li>
+          <li class="nav-item hover nav-hover">Contact me</li>
+        </ul>
+      </nav>
+      <!-- <ul class="socials">
+        <li class="icon hover"><i class="fab fa-facebook-square"></i></li>
+        <li class="icon hover"><i class="fab fa-instagram"></i></li>
+        <li class="icon hover"><i class="fab fa-github-square"></i></li>
+        <li class="icon hover"><i class="fab fa-linkedin-in"></i></li>
+      </ul> -->
+    </section>
+    <section class="contact">
+      <div class="container"></div>
+    </section>
+  </body>
+  <script src="./js/jquery-3.5.1.min.js"></script>
+  <script src="./js/gsap.min.js"></script>
+  <script src="./js/index.js"></script>
 </html>
