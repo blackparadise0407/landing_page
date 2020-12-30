@@ -21,9 +21,21 @@ const cursor = $(".cursor");
 const cursorFollowing = $(".cursorFollowing");
 
 const hover = $(".hover");
-const navHover = $(".nav-hover");
+const hoverFollowing = $(".hoverFollowing");
 
 const title = $(".title");
+
+// $(document).ready(function () {
+//   console.log("READY");
+//   $("#wrapper").fullpage({
+//     //options here
+//     autoScrolling: true,
+//     // scrollHorizontally: true,
+//   });
+
+//   //methods
+//   $.fn.fullpage.setAllowScrolling(false);
+// });
 
 $(window).on("mousemove", ({ clientX, clientY }) => {
   gsap.to(cursor, {
@@ -53,6 +65,20 @@ hover.on("mouseleave", () => {
   cursor.removeClass("active");
   cursorFollowing.removeClass("active");
   console.log("mouseleave");
+});
+
+hoverFollowing.each(function () {
+  $(this).on("mousemove", ({ offsetX, offsetY }) => {
+    let perX = offsetX / 10;
+    let perY = offsetY / 10;
+    $(this).css({
+      transform: `translate(${perX}px, ${perY}px)`,
+    });
+  });
+
+  $(this).on("mouseleave", () => {
+    $(this).css("transform", `translate(0,0)`);
+  });
 });
 
 $(".burgur").on("click", () => {

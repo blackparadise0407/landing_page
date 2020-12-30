@@ -93,20 +93,21 @@ q {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #fff;
+  width: 5px;
+  height: 5px;
+  // border: 2px solid #fff;
   // background-color: #fff;
   pointer-events: none;
   border-radius: 50%;
   z-index: 900;
   // transform: translate(-50%, -50%);
   transition: width 0.2s, height 0.2s;
+  background-color: #fff;
   mix-blend-mode: difference;
   &.active {
     transition: width 0.2s, height 0.2s;
-    width: 86px;
-    height: 86px;
+    width: 120px;
+    height: 120px;
     background-color: #fff;
   }
 }
@@ -127,8 +128,8 @@ q {
   transition: width 0.2s, height 0.2s;
   &.active {
     transition: width 0.2s, height 0.2s;
-    width: 140px;
-    height: 140px;
+    width: 200px;
+    height: 200px;
   }
   mix-blend-mode: difference;
 }
@@ -243,8 +244,8 @@ nav {
     }
     .nav-item {
       position: relative;
-      padding: 1rem;
-      margin: 0 2rem;
+      padding: 4rem;
+      margin: 0 1rem;
       font-size: $fs;
       font-weight: normal;
       line-height: 1.42;
@@ -257,8 +258,8 @@ nav {
         content: "";
       }
     }
-    .nav-hover {
-      transition: transform 0.2s ease;
+    .hoverFollowing {
+      transition: transform 0.1s ease;
     }
   }
 }

@@ -70,22 +70,22 @@ q {
   position: fixed;
   top: 0;
   left: 0;
-  width: 10px;
-  height: 10px;
-  border: 2px solid #fff;
+  width: 5px;
+  height: 5px;
   pointer-events: none;
   border-radius: 50%;
   z-index: 900;
   -webkit-transition: width 0.2s, height 0.2s;
   transition: width 0.2s, height 0.2s;
+  background-color: #fff;
   mix-blend-mode: difference;
 }
 
 .cursor.active {
   -webkit-transition: width 0.2s, height 0.2s;
   transition: width 0.2s, height 0.2s;
-  width: 86px;
-  height: 86px;
+  width: 120px;
+  height: 120px;
   background-color: #fff;
 }
 
@@ -108,8 +108,8 @@ q {
 .cursorFollowing.active {
   -webkit-transition: width 0.2s, height 0.2s;
   transition: width 0.2s, height 0.2s;
-  width: 140px;
-  height: 140px;
+  width: 200px;
+  height: 200px;
 }
 
 .no-select {
@@ -270,8 +270,8 @@ nav .nav-list {
 
 nav .nav-list .nav-item {
   position: relative;
-  padding: 1rem;
-  margin: 0 2rem;
+  padding: 4rem;
+  margin: 0 1rem;
   font-size: 1.8rem;
   font-weight: normal;
   line-height: 1.42;
@@ -287,10 +287,10 @@ nav .nav-list .nav-item:before {
   content: "";
 }
 
-nav .nav-list .nav-hover {
-  -webkit-transition: -webkit-transform 0.2s ease;
-  transition: -webkit-transform 0.2s ease;
-  transition: transform 0.2s ease;
-  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+nav .nav-list .hoverFollowing {
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
 }
 /*# sourceMappingURL=styles.css.map */
